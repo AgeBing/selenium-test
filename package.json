@@ -1,0 +1,17 @@
+{
+  "name": "testwork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "selenium-side-runner yuqueSearch.side",
+    "convert" : "node convert.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chromedriver": "^80.0.1",
+    "json2csv": "^4.5.4",
+    "selenium-side-runner": "^3.16.0"
+  }
+}

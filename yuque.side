@@ -1,0 +1,730 @@
+{
+  "id": "fa50dfc6-4e6f-4cc1-8d44-04de36118f22",
+  "version": "2.0",
+  "name": "yuque",
+  "url": "https://www.yuque.com",
+  "tests": [{
+    "id": "7ef6e20a-863a-4351-81c1-c9c5da4befa5",
+    "name": "scopeAll",
+    "commands": [{
+      "id": "19bc9aef-5c00-4ca2-931b-b8ba1694ad8b",
+      "comment": "打开页面",
+      "command": "open",
+      "target": "/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "045e9f73-6d57-45df-89f4-b33f984bb4a3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1182x809",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "face1252-4bbc-4d2c-b48c-d7a589a0815c",
+      "comment": "点击输入框",
+      "command": "click",
+      "target": "css=.ant-input",
+      "targets": [
+        ["css=.ant-input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "461f20d2-d6da-4b38-91b9-808ef48d5ff4",
+      "comment": "输入查找内容",
+      "command": "type",
+      "target": "css=.ant-input",
+      "targets": [
+        ["css=.ant-input", "css:finder"],
+        ["xpath=//input[@value='java']", "xpath:attributes"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "java"
+    }, {
+      "id": "fadf2b0b-7d9a-46e3-9c16-21663777a5c9",
+      "comment": "下拉框内选择第一个 查询平台内所有内容",
+      "command": "click",
+      "target": "xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/div/div/div/ul/li",
+      "targets": [
+        ["css=.ant-dropdown-menu-item-active", "css:finder"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/div/div/div/ul/li", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/ul/li", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6870",
+      "windowTimeout": 5000
+    }, {
+      "id": "86f57bb9-a1e0-41d4-915b-75e18b7c108c",
+      "comment": "点击选择跳转的页面",
+      "command": "selectWindow",
+      "target": "handle=${win6870}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b17b0ab-de41-40bc-ab4a-b84f2a1a3ab5",
+      "comment": "往下翻，随意浏览",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1614)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d2b13ca-ace7-4485-9763-30320725443c",
+      "comment": "点击返回顶部",
+      "command": "click",
+      "target": "css=.ant-back-top-icon",
+      "targets": [
+        ["css=.ant-back-top-icon", "css:finder"],
+        ["xpath=//div[@id='ReactApp']/div[4]/div/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f46b1b44-803e-494e-997d-60c10b35f339",
+    "name": "scopeMe",
+    "commands": [{
+      "id": "371ba435-64fc-4f9c-ac1b-8a7789079245",
+      "comment": "打开页面",
+      "command": "open",
+      "target": "/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65f8a33f-3eb4-49e8-9d31-8ab49070dcb1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1291x795",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1528adc6-568f-43cb-a642-d79f4084d488",
+      "comment": "点击输入框",
+      "command": "click",
+      "target": "css=.ant-input",
+      "targets": [
+        ["css=.ant-input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7e0cc03-323d-4713-9aed-7af41dbbb0c2",
+      "comment": "输入查找内容",
+      "command": "type",
+      "target": "css=.ant-input",
+      "targets": [
+        ["css=.ant-input", "css:finder"],
+        ["xpath=//input[@value='java']", "xpath:attributes"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "javascript"
+    }, {
+      "id": "2ac35ac0-3f2e-4ee6-9d51-809182229966",
+      "comment": "下拉框内选择第二个 查询与我有关内容",
+      "command": "click",
+      "target": "xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/div/div/div/ul/li[2]",
+      "targets": [
+        ["css=.ant-dropdown-menu-item-active", "css:finder"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/div/div/div/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/ul/li[2]", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7096",
+      "windowTimeout": 2000
+    }, {
+      "id": "d9d588fc-6f9d-467e-b8d0-091cee87da96",
+      "comment": "跳转至查询结果页",
+      "command": "selectWindow",
+      "target": "handle=${win7096}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a2ceda7b-3030-4b9c-8e86-2956c6864256",
+    "name": "typeBook",
+    "commands": [{
+      "id": "25a9fb99-9421-4013-9a61-9659916e9d44",
+      "comment": "打开语雀主页（登录情况下）",
+      "command": "open",
+      "target": "/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5ac65ae-1930-4543-8cbf-f27a4ee1ff5f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1291x795",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f2e11f5e-65e0-4ab8-bfc4-1612c8c66abc",
+      "comment": "点击搜索框",
+      "command": "click",
+      "target": "css=.ant-input",
+      "targets": [
+        ["css=.ant-input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb4942b5-af6e-43c1-9ed5-bf1f9153a933",
+      "comment": "输入查询文本",
+      "command": "type",
+      "target": "css=.ant-input",
+      "targets": [
+        ["css=.ant-input", "css:finder"],
+        ["xpath=//input[@value='java']", "xpath:attributes"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "java"
+    }, {
+      "id": "1a310fde-7f19-4168-b54f-280c9af2dfec",
+      "comment": "点击查询（范围为语雀平台）",
+      "command": "click",
+      "target": "xpath=//div[3]/div/div/div/div/div/ul/li[2]",
+      "targets": [
+        ["css=.ant-dropdown-menu-item-active", "css:finder"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/div/div/div/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/ul/li[2]", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win492",
+      "windowTimeout": 2000
+    }, {
+      "id": "8476838b-d7fa-409b-8946-9a53906eb7f2",
+      "comment": "点击到查询结果跳转页面",
+      "command": "selectWindow",
+      "target": "handle=${win492}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "edfb1af1-5d7d-4495-9667-fd702e54aa9a",
+      "comment": "点击结果类别为 知识库",
+      "command": "click",
+      "target": "xpath=//div[2]/div/div/div/div/ul/li[2]/a",
+      "targets": [
+        ["css=.ant-menu-item-active > a", "css:finder"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div[2]/div/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search?p=1&q=java&type=book')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8abb4f45-a523-472e-b367-64347e5fc483",
+      "comment": "等待一定时间，确认 知识库列表 是否返回",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[2]/div/div/div/ul/li",
+      "targets": [
+        ["css=.ant-list-item:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div[2]/div/div/div/div[2]/div/div[2]/div/div/div/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/ul/li", "xpath:position"]
+      ],
+      "value": "5000"
+    }]
+  }, {
+    "id": "94e3166f-0817-46a7-8197-1fa4070e1586",
+    "name": "typeDoc",
+    "commands": [{
+      "id": "db4b4ac8-5025-4003-b396-1e335ee89dd7",
+      "comment": "打开语雀主页（登录情况下）",
+      "command": "open",
+      "target": "/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5323860-f54a-4d31-81f6-c01ba2928721",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1291x795",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a03b9eb1-8977-4c19-b7fb-d98c2d6ea438",
+      "comment": "点击搜索框",
+      "command": "click",
+      "target": "css=.ant-input",
+      "targets": [
+        ["css=.ant-input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48e18945-d0b7-42ed-b9cf-3533a5b867ae",
+      "comment": "输入查询文本",
+      "command": "type",
+      "target": "css=.ant-input",
+      "targets": [
+        ["css=.ant-input", "css:finder"],
+        ["xpath=//input[@value='java']", "xpath:attributes"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "java"
+    }, {
+      "id": "ab83924a-3b9c-414b-9a76-ef13d191bd4c",
+      "comment": "点击查询（范围为语雀平台）",
+      "command": "click",
+      "target": "xpath=//div[3]/div/div/div/div/div/ul/li[2]",
+      "targets": [
+        ["css=.ant-dropdown-menu-item-active", "css:finder"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/div/div/div/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/ul/li[2]", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win492",
+      "windowTimeout": 2000
+    }, {
+      "id": "810b181f-3d73-41a9-8670-d59ed426ec41",
+      "comment": "点击到查询结果跳转页面",
+      "command": "selectWindow",
+      "target": "handle=${win492}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d13936e-4407-4a9a-92b4-7331251f4c0d",
+      "comment": "点击结果类别为 文档",
+      "command": "click",
+      "target": "css=.ant-menu-item > .active",
+      "targets": [
+        ["css=.ant-menu-item > .active", "css:finder"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div[2]/div/div/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search?p=1&q=java&type=doc')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "abd43ca7-3eb3-49b8-a264-dada261c82ad",
+      "comment": "等待一定时间，确认文档列表是否返回",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[2]/div/div/div/ul/li",
+      "targets": [
+        ["css=.ant-list-item:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div[2]/div/div/div/div[2]/div/div[2]/div/div/div/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/ul/li", "xpath:position"]
+      ],
+      "value": "5000"
+    }]
+  }, {
+    "id": "1758ab30-290a-48db-874c-14d4863ced33",
+    "name": "typeArtboard",
+    "commands": [{
+      "id": "05f9c07e-18da-4f0f-9e21-e93a4c05f2f9",
+      "comment": "打开语雀主页（登录情况下）",
+      "command": "open",
+      "target": "/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "336f7e14-eed1-4c9e-a0f1-191166755226",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1291x795",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a76ec7f-adc0-4fbe-adc2-d6deaa650b0f",
+      "comment": "点击搜索框",
+      "command": "click",
+      "target": "css=.ant-input",
+      "targets": [
+        ["css=.ant-input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45a970de-3e8a-4be8-85ff-593773356abe",
+      "comment": "输入查询文本",
+      "command": "type",
+      "target": "css=.ant-input",
+      "targets": [
+        ["css=.ant-input", "css:finder"],
+        ["xpath=//input[@value='java']", "xpath:attributes"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "java"
+    }, {
+      "id": "c3412305-ef32-411e-9bfe-37fa22eb2150",
+      "comment": "点击查询（范围为语雀平台）",
+      "command": "click",
+      "target": "xpath=//div[3]/div/div/div/div/div/ul/li[2]",
+      "targets": [
+        ["css=.ant-dropdown-menu-item-active", "css:finder"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/div/div/div/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/ul/li[2]", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win492",
+      "windowTimeout": 2000
+    }, {
+      "id": "1d6b1e8f-a6ab-4907-b93c-e05846dfff2d",
+      "comment": "点击到查询结果跳转页面",
+      "command": "selectWindow",
+      "target": "handle=${win492}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9594553f-d7bd-42ad-a218-a1b51dfdf40f",
+      "comment": "点击结果类别为 画板",
+      "command": "click",
+      "target": "xpath=//li[3]/a",
+      "targets": [
+        ["css=.ant-menu-item-active > a", "css:finder"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div[2]/div/div/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search?p=1&q=1&related=true&type=artboard')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfa4b823-cdf2-48f7-936c-32d94d47095b",
+      "comment": "等待一定时间，确认 画板列表 是否返回",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[2]/div/div/div/ul/li",
+      "targets": [
+        ["css=.ant-list-item:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div[2]/div/div/div/div[2]/div/div[2]/div/div/div/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/ul/li", "xpath:position"]
+      ],
+      "value": "5000"
+    }]
+  }, {
+    "id": "51cdf289-4fed-470e-bd34-b6dcb1f98f70",
+    "name": "typeTopic",
+    "commands": [{
+      "id": "db6048f5-c977-4f04-b61a-74d7d5084ad0",
+      "comment": "打开语雀主页（登录情况下）",
+      "command": "open",
+      "target": "/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63f3a842-8210-4f26-b5cc-f545f4b7dd3f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1291x795",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "36608ca2-acee-4ff5-837d-27677a8150d3",
+      "comment": "点击搜索框",
+      "command": "click",
+      "target": "css=.ant-input",
+      "targets": [
+        ["css=.ant-input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc09c5a1-20e5-4341-bd64-d5efd8bc20a1",
+      "comment": "输入查询文本",
+      "command": "type",
+      "target": "css=.ant-input",
+      "targets": [
+        ["css=.ant-input", "css:finder"],
+        ["xpath=//input[@value='java']", "xpath:attributes"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "java"
+    }, {
+      "id": "efeb9133-c267-4a65-95b3-0e422aac8f29",
+      "comment": "点击查询（范围为语雀平台）",
+      "command": "click",
+      "target": "xpath=//div[3]/div/div/div/div/div/ul/li[2]",
+      "targets": [
+        ["css=.ant-dropdown-menu-item-active", "css:finder"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/div/div/div/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/ul/li[2]", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win492",
+      "windowTimeout": 2000
+    }, {
+      "id": "d95babdf-82a8-454b-9a28-88455a98c6fb",
+      "comment": "点击到查询结果跳转页面",
+      "command": "selectWindow",
+      "target": "handle=${win492}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "268c69cb-0be1-42b7-9b33-c1240d47681f",
+      "comment": "点击结果类别为 讨论",
+      "command": "click",
+      "target": "xpath=//li[4]/a",
+      "targets": [
+        ["css=.ant-menu-item > .active", "css:finder"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div[2]/div/div/div/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search?p=1&q=1&related=true&type=topic')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c8bca6e-7eb9-47d5-85d7-be873a71d94a",
+      "comment": "等待一定时间，确认 讨论列表 是否返回",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[2]/div/div/div/ul/li",
+      "targets": [
+        ["css=.ant-list-item:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div[2]/div/div/div/div[2]/div/div[2]/div/div/div/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/ul/li", "xpath:position"]
+      ],
+      "value": "5000"
+    }]
+  }, {
+    "id": "135207e3-84eb-47a5-9a0a-c123b2444f92",
+    "name": "typeAttach",
+    "commands": [{
+      "id": "c4e5d242-00d1-47a8-8e21-6dfd7653395a",
+      "comment": "打开语雀主页（登录情况下）",
+      "command": "open",
+      "target": "/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "456affb8-d6f6-472a-9aa7-59abb859382d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1291x795",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9b44db7-f602-4b9f-8ee9-f7b482e339da",
+      "comment": "点击搜索框",
+      "command": "click",
+      "target": "css=.ant-input",
+      "targets": [
+        ["css=.ant-input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "602b07e2-4a66-4d52-b77d-c61dd287d912",
+      "comment": "输入查询文本",
+      "command": "type",
+      "target": "css=.ant-input",
+      "targets": [
+        ["css=.ant-input", "css:finder"],
+        ["xpath=//input[@value='java']", "xpath:attributes"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "java"
+    }, {
+      "id": "e736f818-026a-46f5-be43-f510be6a9589",
+      "comment": "点击查询（范围为语雀平台）",
+      "command": "click",
+      "target": "xpath=//div[3]/div/div/div/div/div/ul/li[2]",
+      "targets": [
+        ["css=.ant-dropdown-menu-item-active", "css:finder"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/div/div/div/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/ul/li[2]", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win492",
+      "windowTimeout": 2000
+    }, {
+      "id": "d7ae7ca8-70e9-4118-a0da-02fc3d876fa2",
+      "comment": "点击到查询结果跳转页面",
+      "command": "selectWindow",
+      "target": "handle=${win492}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab53c324-4c33-45c6-b2a4-ac7f21a281bc",
+      "comment": "点击结果类别为 附件",
+      "command": "click",
+      "target": "xpath=//li[5]/a",
+      "targets": [
+        ["css=.ant-menu-item > .active", "css:finder"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div[2]/div/div/div/div/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search?p=1&q=1&related=true&type=attachment')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea104db3-8c32-43b6-ba74-c562ad9559e0",
+      "comment": "等待一定时间，确认 附件列表 是否返回",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[2]/div/div/div/ul/li",
+      "targets": [
+        ["css=.ant-list-item:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div[2]/div/div/div/div[2]/div/div[2]/div/div/div/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/ul/li", "xpath:position"]
+      ],
+      "value": "5000"
+    }]
+  }, {
+    "id": "12a644df-e029-4961-ac23-cea25695c103",
+    "name": "findNothing",
+    "commands": [{
+      "id": "4f6564ac-8d3e-46ad-b5f2-b7ff0681c69d",
+      "comment": "打开语雀主页（登录情况下）",
+      "command": "open",
+      "target": "/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aacaf80e-cc20-4390-ba1f-3f090b785462",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1291x795",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc97fa49-3fb3-4b28-a76e-8eef5878d8bf",
+      "comment": "点击搜索框",
+      "command": "click",
+      "target": "css=.ant-input",
+      "targets": [
+        ["css=.ant-input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7d29a6d-90c6-47e3-9e58-2d329f943adf",
+      "comment": "输入查不到内容的文本",
+      "command": "type",
+      "target": "css=.ant-input",
+      "targets": [
+        ["css=.ant-input", "css:finder"],
+        ["xpath=//input[@value='java']", "xpath:attributes"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "我猜你肯定查不出来&！叽里呱啦"
+    }, {
+      "id": "9f6d5d52-83cd-4693-9fc8-12150ff99d3f",
+      "comment": "点击查询（范围为语雀平台）",
+      "command": "click",
+      "target": "xpath=//div[3]/div/div/div/div/div/ul/li[2]",
+      "targets": [
+        ["css=.ant-dropdown-menu-item-active", "css:finder"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/div/div/div/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/ul/li[2]", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win492",
+      "windowTimeout": 2000
+    }, {
+      "id": "84635f8a-5b8f-4512-b2a4-1fb636eb7f94",
+      "comment": "点击到查询结果跳转页面",
+      "command": "selectWindow",
+      "target": "handle=${win492}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b67e09d0-7708-434d-9910-8eae3706c06b",
+      "comment": "等待一定时间，确认 结果列表 是否返回",
+      "command": "waitForElementNotPresent",
+      "target": "xpath=//div[2]/div/div/div/ul/li",
+      "targets": [
+        ["css=.ant-list-item:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div[2]/div/div/div/div[2]/div/div[2]/div/div/div/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/ul/li", "xpath:position"]
+      ],
+      "value": "5000"
+    }]
+  }, {
+    "id": "019a77ea-efaa-4869-8dd7-beb136e7c10c",
+    "name": "clearInput",
+    "commands": [{
+      "id": "aa0af2c6-270e-425c-99b6-0f1e061d2bdd",
+      "comment": "打开语雀主页（登录情况下）",
+      "command": "open",
+      "target": "/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd756e15-3ca7-4946-a458-85b0a24337de",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1291x795",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47c217c3-125c-401c-9a21-0bbada285953",
+      "comment": "点击搜索框",
+      "command": "click",
+      "target": "css=.ant-input",
+      "targets": [
+        ["css=.ant-input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8af2cedf-6b91-4904-af31-69e2a8fd3742",
+      "comment": "随便输入点什么东西",
+      "command": "type",
+      "target": "css=.ant-input",
+      "targets": [
+        ["css=.ant-input", "css:finder"],
+        ["xpath=//input[@value='java']", "xpath:attributes"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "java"
+    }, {
+      "id": "3ca0d2af-45ae-40ff-b6c7-5dcca824b8a8",
+      "comment": "点击清空输入框按钮",
+      "command": "click",
+      "target": "css=.larkicon-close",
+      "targets": [
+        ["css=.larkicon-close", "css:finder"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/span/span[2]/span/span", "xpath:idRelative"],
+        ["xpath=//span[2]/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c522159-b48c-4d8b-98b8-e6b84176fcf7",
+      "comment": "判断输入框内容是否清空",
+      "command": "assertValue",
+      "target": "css=.ant-input",
+      "targets": [
+        ["css=.ant-input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='ReactApp']/div[5]/div/div/div/div[3]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "66071bf5-c7d3-4c84-86c0-1d18f5859ff6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7ef6e20a-863a-4351-81c1-c9c5da4befa5", "f46b1b44-803e-494e-997d-60c10b35f339", "1758ab30-290a-48db-874c-14d4863ced33", "135207e3-84eb-47a5-9a0a-c123b2444f92", "a2ceda7b-3030-4b9c-8e86-2956c6864256", "94e3166f-0817-46a7-8197-1fa4070e1586", "51cdf289-4fed-470e-bd34-b6dcb1f98f70", "019a77ea-efaa-4869-8dd7-beb136e7c10c", "12a644df-e029-4961-ac23-cea25695c103"]
+  }],
+  "urls": ["https://www.yuque.com/"],
+  "plugins": []
+}
